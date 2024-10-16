@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+.cabecalho {
+  background-color: #ff69b4;
+  height: 20vh;
+}
+.cabecalho .items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+.cabecalho .items .imagem span {
+  position: absolute;
+  top: 3.2rem;
+  font-size: 28px;
+  color: white;
+}
+@media screen and (max-width: 600px) {
+  .cabecalho .items .imagem span {
+    top: 3rem;
+    font-size: 15px;
+    color: white;
+  }
+}
+@media (max-width: 800px) {
+  .cabecalho .items .imagem span {
+    top: 3.2rem;
+    font-size: 20px;
+    color: white;
+  }
+}
+.cabecalho .items .subItems {
+  display: flex;
+  align-items: center;
+  gap: 4em;
+  font-size: 28px;
+  color: white;
+}
+@media (max-width: 600px) {
+  .cabecalho .items .subItems {
+    flex-direction: column;
+    font-size: 10px;
+    gap: 0.25em;
+  }
+}
+@media (max-width: 800px) {
+  .cabecalho .items .subItems {
+    font-size: 20px;
+  }
+}
+
+main .explicacaoOutubro {
+  display: flex;
+  align-items: center;
+  padding: 2rem 4rem;
+  justify-content: space-between;
+  background-color: #FFD9EC;
+}
+main .explicacaoOutubro p {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 60%;
+  text-justify: justify;
+  line-height: 2rem;
+}
+main .explicacaoOutubro figure {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .explicacaoRosa {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #ff69b4;
+}
+main .explicacaoRosa p {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 60%;
+  text-justify: justify;
+  line-height: 2rem;
+}
+main .cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #FFD9EC;
+}
+
+footer {
+  background-color: #ff69b4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer p {
+  color: white;
+}/*# sourceMappingURL=style.css.map */
