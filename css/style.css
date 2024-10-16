@@ -22,17 +22,10 @@
   font-size: 28px;
   color: white;
 }
-@media screen and (max-width: 600px) {
-  .cabecalho .items .imagem span {
-    top: 3rem;
-    font-size: 15px;
-    color: white;
-  }
-}
 @media (max-width: 800px) {
   .cabecalho .items .imagem span {
     top: 3.2rem;
-    font-size: 20px;
+    font-size: 15px;
     color: white;
   }
 }
@@ -46,29 +39,29 @@
 @media (max-width: 600px) {
   .cabecalho .items .subItems {
     flex-direction: column;
-    font-size: 10px;
-    gap: 0.25em;
-  }
-}
-@media (max-width: 800px) {
-  .cabecalho .items .subItems {
     font-size: 20px;
+    gap: 0.25em;
   }
 }
 
 main .explicacaoOutubro {
   display: flex;
   align-items: center;
-  padding: 2rem 4rem;
-  justify-content: space-between;
+  justify-content: space-evenly;
   background-color: #FFD9EC;
 }
 main .explicacaoOutubro p {
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
-  width: 60%;
+  width: 35%;
   text-justify: justify;
   line-height: 2rem;
+}
+@media (max-width: 800px) {
+  main .explicacaoOutubro p {
+    width: 50vw;
+    padding: 0.25rem;
+  }
 }
 main .explicacaoOutubro figure {
   width: 40%;
@@ -76,24 +69,51 @@ main .explicacaoOutubro figure {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 800px) {
+  main .explicacaoOutubro figure img {
+    width: 45vw;
+    height: 45vh;
+  }
+}
 main .explicacaoRosa {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   background-color: #ff69b4;
 }
 main .explicacaoRosa p {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  width: 60%;
+  width: 50%;
   text-justify: justify;
   line-height: 2rem;
+}
+main .explicacaoRosa figure {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 600px) {
+  main .explicacaoRosa p {
+    width: 50vw;
+    padding: 0.25rem;
+  }
+  main .explicacaoRosa img {
+    width: 45vw;
+    height: 45vh;
+  }
 }
 main .cards {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: #FFD9EC;
+}
+@media screen and (max-width: 800px) {
+  main .cards .card img {
+    width: 25vw;
+  }
 }
 
 footer {

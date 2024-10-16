@@ -24,18 +24,11 @@
          color: white;              
        }
        
-       @media screen and (max-width: 600px){
-         span{
-          top: 3rem; 
-          font-size: 15px; 
-          color: white;              
-       }
-   }
        @media (max-width: 800px){
          span{
-         top: 3.2rem; 
-         font-size: 20px; 
-         color: white;              
+          top: 3.2rem; 
+          font-size: 15px; 
+          color: white;              
        }
       }
    }
@@ -49,7 +42,7 @@
 
      @media (max-width: 600px){
        flex-direction: column;
-       font-size: 10px;
+       font-size: 20px;
        gap: 0.25em;
      }
   }
@@ -61,14 +54,47 @@ main{
    .explicacaoOutubro{
       display: flex;
       align-items: center;
-      padding: 2rem 4rem;
-      justify-content: space-between;  
+      justify-content: space-evenly; 
       background-color: #FFD9EC;
       
       p{
          font-weight: bold;
          font-family: Arial, Helvetica, sans-serif;
-         width: 60%;
+         width: 35%;
+         text-justify: justify;
+         line-height: 2rem;
+
+         @media (max-width: 800px){
+            width: 50vw;
+            padding: 0.25rem;
+         }
+      }
+
+      figure{
+         width: 40%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+
+         @media (max-width: 800px){
+            img{
+              width: 45vw;
+              height: 45vh;
+            }
+         }
+      }
+   }
+   
+   .explicacaoRosa{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;  
+      background-color: #ff69b4; 
+      
+      p{
+         color: white;
+         font-family: Arial, Helvetica, sans-serif;
+         width: 50%;
          text-justify: justify;
          line-height: 2rem;
       }
@@ -79,20 +105,16 @@ main{
          align-items: center;
          justify-content: center;
       }
-   }
-   
-   .explicacaoRosa{
-      display: flex;
-      align-items: center;
-      justify-content: space-evenly;  
-      background-color: #ff69b4; 
-      
-      p{
-         color: white;
-         font-family: Arial, Helvetica, sans-serif;
-         width: 60%;
-         text-justify: justify;
-         line-height: 2rem;
+
+      @media (max-width: 600px){
+         p{
+            width: 50vw;
+            padding: 0.25rem;
+         }
+           img{
+             width: 45vw;
+              height: 45vh;
+           }
       }
    }
 
@@ -102,11 +124,10 @@ main{
       justify-content: space-between;
       background-color: #FFD9EC;
 
-      @media screen and(max-width: 800px){
+      @media screen and (max-width: 800px){
          .card{
             img{
-                width: 100vw;
-                height: 100vh;
+                width: 25vw;
             }
          }
       }
